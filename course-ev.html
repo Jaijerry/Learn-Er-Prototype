@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>Learn-er: Home</title>
+    <link rel="icon" href="assets/Logo-removebg-preview.png" type="image/icon type">
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="Logo">
+            <img src="assets/onlinepngtool-Black.png">
+           <h1>Learn-Er</h1>
+        </div>
+        <ul class="nav-body">
+            <li><a href="/" class="nav-item">Home</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn" id="dropbtn">Courses
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="dropdown-content" id="dropdown-content">
+                        <a href="course-aws.html" style="font-size: 1.2rem;">AWS Cloud Practitioner</a>
+                        <a href="course-azure.html" style="font-size: 1.2rem;">Azure Fundamentals</a>
+                        <a href="course-excel.html" style="font-size: 1.2rem;">Excel Beginner to Advanced</a>
+                        <a href="course-powerbi.html" style="font-size: 1.2rem;">Microsoft Power BI Introduction</a>
+                        <a href="course-ev.html" style="font-size: 1.2rem;">Introduction to Electric Vehicle</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="/" class="nav-item">About-us</a></li>
+            <li><a href="/" class="nav-item">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" id="nav-toggle">
+            <i class="fa fa-bars" aria-hidden="true" id="bar"></i>
+        </button>
+    </nav>
+    <div class="nav-menu" id="nav-menu">
+        <ul>
+            <li class="nav-item"><a href="/">Home</a></li>
+            <li class="nav-item"><a href="#courses">Courses</a></li>
+            <li class="nav-item"><a href="/">About</a></li>
+            <li class="nav-item"><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <footer>
+        <div class="hero_area">
+            <h4 style="padding: 1rem;">@Learn-Er 2024</h4>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                </g>
+            </svg>
+        </div>
+    </footer>
+
+    <script src="index.js"/>
+</body>
+</html>

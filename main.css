@@ -43,10 +43,14 @@
     list-style-type: none;
 }
 
-.nav-body li a {
+.nav-item {
     font-size: 1.4rem;
     text-decoration: none;
     color: black;
+}
+
+.nav-item:hover {
+    color: #FFFECB;
 }
 
 .dropdown {
@@ -61,6 +65,10 @@
     background-color: inherit;
     margin: auto;
     border: none;
+}
+
+.dropbtn:hover {
+    color: #FFFECB;
 }
 
 .dropdown-content {
@@ -95,12 +103,16 @@
     display: none;
 }
 
+.nav-toggle:hover {
+    background-color: #318fb8;
+}
+
 .nav-menu { 
     display: none; 
     flex-direction: column; 
     background-color: #37AFE1; 
     position: absolute; 
-    width: 25%;
+    width: 100%;
     padding: 2rem;
 }
 
@@ -178,6 +190,14 @@
     list-style: none;
     font-size: 1.4rem;
     padding-top: 1rem;
+}
+
+.img-center {
+    max-width: 50%;
+    min-width: 25rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Waves Animation start*/
@@ -261,6 +281,20 @@
 
     .nav-menu {
         display: none;
+    }
+
+    .nav-item {
+        list-style: none;
+        padding-bottom: 1rem;
+    }
+
+    .nav-item a:hover {
+        color: #FFFECB;
+    }
+
+    .nav-item a {
+        text-decoration: none;
+        color: black;
     }
 
     .train {
