@@ -11,8 +11,7 @@
 .nav-bar {
     display: grid;
     grid-template-columns: 25% auto;
-    background-color: rgb(171, 250, 223);
-    overflow: auto;
+    background-color: #37AFE1;
 }
 
 .nav-bar div {
@@ -29,6 +28,11 @@
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
+}
+
+.Logo img {
+    width: 50px;
+    padding-right: 1px;
 }
 
 .nav-body {
@@ -62,7 +66,7 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #0a9673;
+    background-color: #4CC9FE;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -82,12 +86,26 @@
     background-color: #ddd;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
+.nav-toggle {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 12px;
+    background-color: inherit;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-menu { 
+    display: none; 
+    flex-direction: column; 
+    background-color: #37AFE1; 
+    position: absolute; 
+    width: 25%;
+    padding: 2rem;
 }
 
 .container {
-    background-color: rgba(253, 165, 165, 0.774);
+    background-color: #FFFECB
 }
 
 .container h1 {
@@ -110,8 +128,13 @@
     padding: 2rem 1rem;
 }
 
-section img {
+.train section img {
     max-height: 250px;
+    padding: 2px 0px;
+}
+
+.train section h2 {
+    padding-bottom: 1rem;
 }
 
 .courses {
@@ -213,10 +236,39 @@ section img {
 
 /*Shrinking for mobile*/
 
-@media (max-width: 768px) {
+@media (max-width: 878px) {
     .waves {
         height: 40px;
         min-height: 40px;
+    }
+
+    .nav-bar {
+        grid-template-columns: 50% auto;
+    }
+
+    .nav-body {
+        display: none;
+    }
+
+    .nav-toggle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        justify-self: end;
+        margin-right: 2rem;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .train {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        padding-bottom: 2rem;
+        padding: 2rem 1rem;
     }
 }
 

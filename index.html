@@ -6,21 +6,22 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
     <title>Learn-er: Home</title>
-    <link rel="icon" href="assets/Logo.png" type="image/icon type">
+    <link rel="icon" href="assets/Logo-removebg-preview.png" type="image/icon type">
 </head>
 <body>
     <nav class="nav-bar">
         <div class="Logo">
+            <img src="assets/onlinepngtool-Black.png">
            <h1>Learn-Er</h1>
         </div>
         <ul class="nav-body">
             <li><a href="/" class="nav-item">Home</a></li>
             <li>
                 <div class="dropdown">
-                    <button class="dropbtn">Courses
+                    <button class="dropbtn" id="dropbtn">Courses
                         <i class="fa fa-caret-down" aria-hidden="true"></i>
                     </button>
-                    <div class="dropdown-content">
+                    <div class="dropdown-content" id="dropdown-content">
                         <a href="#" style="font-size: 1.2rem;">AWS Cloud Practitioner</a>
                         <a href="#" style="font-size: 1.2rem;">Azure Fundamentals</a>
                         <a href="#" style="font-size: 1.2rem;">Excel Beginner to Advanced</a>
@@ -32,7 +33,16 @@
             <li><a href="/blogs" class="nav-item">About-us</a></li>
             <li><a href="/blogs" class="nav-item">Contact</a></li>
         </ul>
+        <button class="nav-toggle" id="nav-toggle">
+            <i class="fa fa-bars" aria-hidden="true" id="bar"></i>
+        </button>
     </nav>
+    <div class="nav-menu" id="nav-menu">
+        <a href="/" class="nav-item">Home</a>
+        <a href="/" class="nav-item">Home</a>
+        <a href="/" class="nav-item">Home</a>
+        <a href="/" class="nav-item">Home</a>
+    </div>
     <div class="container">
         <h1>Welcome!</h1>
         <div class="home-about">
@@ -43,7 +53,7 @@
             </p>
         </div>
         <div class="train">
-            <section style="max-width: 50%;">
+            <section>
                 <h2>Corporate Training</h2>
                 <img src="assets/Career_Guide_Photos-2160x1215-GettyImages-827810760.jpg"/>
                 <p class="train-text">
@@ -138,5 +148,7 @@
             </svg>
         </div>
     </footer>
+
+    <script src="index.js"/>
 </body>
 </html>
