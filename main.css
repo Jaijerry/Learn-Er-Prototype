@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap');
-
 * {
     margin: 0px;
     padding: 0px;
@@ -24,15 +22,17 @@
 }
 
 .Logo h1 {
-    font-family: "Playwrite NZ", cursive;
+    font-family: "Playwrite NZ";
     font-optical-sizing: auto;
+    font-size: 2rem;
     font-weight: 800;
     font-style: normal;
+    color: rgb(226, 2, 2);
 }
 
 .Logo img {
-    width: 50px;
-    padding-right: 1px;
+    width: 40px;
+    padding-right: 5px;
 }
 
 .nav-body {
@@ -114,10 +114,11 @@
     position: absolute; 
     width: 100%;
     padding: 2rem;
+    z-index: 1;
 }
 
 .container {
-    background-color: #FFFECB
+    background-color: white;
 }
 
 .container h1 {
@@ -164,6 +165,15 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 200px;
     text-align: center;
+    text-decoration: none;
+}
+
+.course:hover {
+    background-color:#4CC9FE;
+}
+
+.course:hover .details h2 {
+    color: black;
 }
 
 .course img {
@@ -192,6 +202,15 @@
     padding-top: 1rem;
 }
 
+.contact-list a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact-list a span {
+    padding: 0 1rem;
+}
+
 .img-center {
     max-width: 50%;
     min-width: 25rem;
@@ -199,6 +218,74 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+/* Course pages styling */
+
+.excel-hero {
+    display: flex;
+    justify-content: space-between;
+}
+
+.excel-hero img {
+    padding: 1rem;
+}
+
+.excel-hero p {
+    padding: 1rem;
+    font-weight: 700;
+}
+
+#excel-download {
+    font-size: 1.2rem;
+    font-weight: 900;
+    padding: 0.5rem;
+    background-color: #007BFF;
+    border-radius: 1rem;
+    box-shadow: 2px 1px black;
+    margin: 1rem 50%;
+    min-width: max-content;
+}
+
+.excel-syllabus {
+    padding: 1rem;
+    border-top: #007BFF solid 2px;
+}
+
+.excel-syllabus h2 {
+    padding: 1rem 0;
+}
+
+.excel-syllabus p {
+    padding-bottom: 1rem;
+    font-weight: 600;
+}
+
+.excel-basic button {
+    background-color: #4CC9FE;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 0.2rem;
+    margin-top: 1rem;
+    height: fit-content;
+}
+
+.excel-basic {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+
+.basic-content ol {
+    list-style-type: none;
+}
+
+.basic-content {
+    padding: 1rem;
+    border: #555 solid;
+    width: 50%;
+}
+
+/* Course styling end */
 
 /* Waves Animation start*/
 
@@ -304,6 +391,33 @@
         padding-bottom: 2rem;
         padding: 2rem 1rem;
     }
+
+    .excel-hero {
+        flex-direction: column-reverse;
+    }
+
+    #excel-download {
+        margin: 1rem 25%;
+    }
+
+    .excel-basic {
+        flex-direction: column;
+    }
+
+    .basic-content {
+        width: 100%;
+        margin: 1rem 0;
+    }
 }
 
 /* Waves Animation end*/
+
+@media (max-width: 468px) {
+    .nav-bar {
+        grid-template-columns: 75% auto;
+    }
+
+    .train section img {
+        width: 100%;
+    }
+}

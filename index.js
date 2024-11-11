@@ -18,3 +18,17 @@ document.getElementById('nav-toggle').addEventListener('click', function() {
         bar.style.color = '#FFFECB';
     }
 });
+
+document.getElementById('excel-download').onclick = function() {
+    location.href = "https://www.microsoft.com/en-in/microsoft-365/excel";
+}
+
+document.getElementById('basic').addEventListener('click', function() {
+    var content = document.getElementById('basic-content');
+    if(content.style.display === 'none') {
+        content.style.display === 'block';
+    }
+    else {
+        content.style.display === 'none';
+    }
+});
