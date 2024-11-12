@@ -6,6 +6,11 @@
     font-family: "Poppins", sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .nav-bar {
     display: grid;
     grid-template-columns: 25% auto;
@@ -235,14 +240,14 @@
     font-weight: 700;
 }
 
-#excel-download {
+#excel-download, #aws-download, #azure-download {
     font-size: 1.2rem;
     font-weight: 900;
     padding: 0.5rem;
     background-color: #007BFF;
     border-radius: 1rem;
     box-shadow: 2px 1px black;
-    margin: 1rem 50%;
+    margin: 1rem 25%;
     min-width: max-content;
 }
 
@@ -397,6 +402,10 @@
     }
 
     #excel-download {
+        margin: 1rem 25%;
+    }
+
+    #aws-download {
         margin: 1rem 25%;
     }
 

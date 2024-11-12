@@ -32,3 +32,7 @@ document.getElementById('basic').addEventListener('click', function() {
         content.style.display === 'none';
     }
 });
+
+document.getElementById('aws-download').onclick = function() {
+    location.href = "https://aws.amazon.com/certification/certified-solutions-architect-associate/";
+}
