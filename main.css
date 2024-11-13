@@ -247,7 +247,8 @@ a {
     background-color: #007BFF;
     border-radius: 1rem;
     box-shadow: 2px 1px black;
-    margin: 1rem 25%;
+    margin: 1rem;
+    margin-left: 25%;
     min-width: max-content;
 }
 
@@ -261,33 +262,51 @@ a {
 }
 
 .excel-syllabus p {
-    padding-bottom: 1rem;
     font-weight: 600;
 }
 
-.excel-basic button {
+.syllabus-btn {
     background-color: #4CC9FE;
     font-size: 20px;
     border-radius: 5px;
     padding: 0.2rem;
-    margin-top: 1rem;
     height: fit-content;
 }
 
 .excel-basic {
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem 0;
+    padding: 0.5rem 0;
 }
 
-.basic-content ol {
+.syllabus-content ol {
     list-style-type: none;
 }
 
-.basic-content {
+.syllabus-content {
     padding: 1rem;
     border: #555 solid;
     width: 50%;
+    display: block;
+}
+
+.mod-btn {
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 0.2rem;
+    background-color: antiquewhite;
+}
+
+.mod-content ul{
+    padding-left: 2rem;
+}
+
+.mod-content p {
+    padding: 1rem;
+}
+
+.mod-content {
+    border: black solid;
 }
 
 /* Course styling end */
@@ -428,5 +447,13 @@ a {
 
     .train section img {
         width: 100%;
+    }
+
+    .contact-list {
+        font-size: 1rem;
+    }
+
+    #excel-download, #aws-download, #azure-download {
+        margin-left: 1rem;
     }
 }

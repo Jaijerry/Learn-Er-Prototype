@@ -25,11 +25,43 @@ document.getElementById('excel-download').onclick = function() {
 
 document.getElementById('basic').addEventListener('click', function() {
     var content = document.getElementById('basic-content');
-    if(content.style.display === 'none') {
-        content.style.display === 'block';
+    if(content.style.display === 'block') {
+        content.style.display = 'none';
     }
     else {
-        content.style.display === 'none';
+        content.style.display = 'block';
+    }
+});
+
+document.getElementById('intermediate').addEventListener('click', function() {
+    var content = document.getElementById('inter-content');
+    if(content.style.display === 'block') {
+        content.style.display = 'none';
+    }
+    else {
+        content.style.display = 'block';
+    }
+});
+
+document.getElementById('advanced').addEventListener('click', function() {
+    var content = document.getElementById('advanced-content');
+    document.getElementById('advanced').style.color = 'white';
+    if(content.style.display === 'block') {
+        content.style.display = 'none';
+    }
+    else {
+        content.style.display = 'block';
+    }
+});
+
+document.getElementById('aws').addEventListener('click', function() {
+    var content = document.getElementById('aws-content');
+    document.getElementById('aws').style.color = 'white';
+    if(content.style.display === 'block') {
+        content.style.display = 'none';
+    }
+    else {
+        content.style.display = 'block';
     }
 });
 
