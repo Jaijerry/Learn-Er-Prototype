@@ -19,52 +19,18 @@ document.getElementById('nav-toggle').addEventListener('click', function() {
     }
 });
 
-document.getElementById('excel-download').onclick = function() {
-    location.href = "https://www.microsoft.com/en-in/microsoft-365/excel";
-}
-
-document.getElementById('basic').addEventListener('click', function() {
-    var content = document.getElementById('basic-content');
-    if(content.style.display === 'block') {
-        content.style.display = 'none';
-    }
-    else {
-        content.style.display = 'block';
-    }
+document.getElementById('qrBtn').addEventListener('click', function() {
+    document.getElementById('qr-container').style.display = 'flex';
 });
 
-document.getElementById('intermediate').addEventListener('click', function() {
-    var content = document.getElementById('inter-content');
-    if(content.style.display === 'block') {
-        content.style.display = 'none';
-    }
-    else {
-        content.style.display = 'block';
-    }
+document.getElementById('closeButton').addEventListener('click', function() {
+    document.getElementById('qr-container').style.display = 'none';
 });
 
-document.getElementById('advanced').addEventListener('click', function() {
-    var content = document.getElementById('advanced-content');
-    document.getElementById('advanced').style.color = 'white';
-    if(content.style.display === 'block') {
-        content.style.display = 'none';
-    }
-    else {
-        content.style.display = 'block';
-    }
+document.getElementById('brochure-btn').addEventListener('click', function() {
+    document.getElementById('brochure').style.display = 'flex';
 });
 
-document.getElementById('aws').addEventListener('click', function() {
-    var content = document.getElementById('aws-content');
-    document.getElementById('aws').style.color = 'white';
-    if(content.style.display === 'block') {
-        content.style.display = 'none';
-    }
-    else {
-        content.style.display = 'block';
-    }
+document.getElementById('closeBrochure').addEventListener('click', function() {
+    document.getElementById('brochure').style.display = 'none';
 });
-
-document.getElementById('aws-download').onclick = function() {
-    location.href = "https://aws.amazon.com/certification/certified-solutions-architect-associate/";
-}
