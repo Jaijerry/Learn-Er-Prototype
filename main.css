@@ -366,6 +366,10 @@ a {
     display: none;
 }
 
+.syllabus-content ol li ul {
+    padding-left: 2rem;
+}
+
 /* Course styling end */
 
 /* Waves Animation start*/
