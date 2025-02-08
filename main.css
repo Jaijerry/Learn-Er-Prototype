@@ -226,6 +226,7 @@ a {
 
 .current-batch {
     padding: 1rem;
+    display: none;
 }
 
 .current-batch span img {
